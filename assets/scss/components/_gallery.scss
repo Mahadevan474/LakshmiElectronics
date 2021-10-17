@@ -1,0 +1,24 @@
+.gallery {
+  &__container {
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 325px 325px 120px;
+    margin: 0 auto 80px;
+    max-width: 80vw;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    img:nth-child(2) {
+      grid-column: auto / span 2;
+    }
+
+    img:nth-child(3) {
+      grid-column: auto / span 2;
+      grid-row: auto / span 2;
+    }
+  }
+}

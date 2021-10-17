@@ -1,0 +1,39 @@
+.footer {
+  background: #2d3846;
+  &__container {
+    // background: #2d3846;
+  }
+
+  &__title {
+    color: #fff;
+    margin-bottom: 0.8rem;
+  }
+
+  .contact__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .contact__link,
+  a {
+    color: #fbb461;
+
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 1.5rem;
+      margin-right: 0.7rem;
+    }
+  }
+
+  &__copyright {
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 12px;
+  }
+}

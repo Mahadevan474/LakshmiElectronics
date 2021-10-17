@@ -1,0 +1,30 @@
+.brand {
+  background: #2d3846;
+
+  &__section {
+    .brand__title {
+      color: #fff;
+    }
+
+    .brand__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+
+      padding-bottom: 1rem;
+    }
+
+    .brand__link {
+      color: #fbb461;
+      font-size: var(--normal-font-size);
+      font-weight: var(--font-semi-bold);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      i {
+        font-size: 1.5rem;
+        margin-right: 0.7rem;
+      }
+    }
+  }
+}
