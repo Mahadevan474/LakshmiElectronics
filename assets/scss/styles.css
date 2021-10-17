@@ -462,6 +462,9 @@ img {
 .footer {
   background: #2d3846;
 }
+.footer .mob__num {
+  margin: 0 0.3rem;
+}
 .footer__title {
   color: #fff;
   margin-bottom: 0.8rem;
