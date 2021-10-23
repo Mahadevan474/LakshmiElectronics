@@ -14,6 +14,7 @@
   }
 
   .app__buttons {
+    grid-template-columns: -webkit-max-content;
     grid-template-columns: max-content;
   }
 
@@ -34,6 +35,7 @@
 @media screen and(max-width:575px) {
   .gallery__container {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: -webkit-max-content;
     grid-template-rows: max-content;
 
     img:nth-child(2) {
@@ -67,6 +69,8 @@
   .contact__container,
   .brand__container {
     grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -75,11 +79,15 @@
   }
 
   .home__container-img {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
     height: 100%;
   }
 
   .about__img {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
     order: -1;
   }
 }
@@ -97,8 +105,15 @@
     height: calc(var(--header-height) + 1.5rem);
 
     &__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
+      -webkit-column-gap: 2.5rem;
+      -moz-column-gap: 2.5rem;
       column-gap: 2.5rem;
     }
 
@@ -116,6 +131,8 @@
   }
 
   .app__buttons {
+    -webkit-box-pack: initial;
+    -ms-flex-pack: initial;
     justify-content: initial;
   }
 }
@@ -128,6 +145,8 @@
 
   .about__container,
   .contact__container {
+    -webkit-column-gap: 6rem;
+    -moz-column-gap: 6rem;
     column-gap: 6rem;
   }
 
@@ -152,11 +171,16 @@
 
   .footer {
     &__container {
+      grid-template-columns: 30% 25% -webkit-max-content;
       grid-template-columns: 30% 25% max-content;
+      -webkit-column-gap: 4rem;
+      -moz-column-gap: 4rem;
       column-gap: 4rem;
     }
 
     &__social {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
       align-items: flex-start;
       &__link {
         font-size: 1.45rem;

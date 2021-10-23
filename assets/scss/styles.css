@@ -174,6 +174,13 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+.nav__container {
+  display: flex;
+  align-items: center;
+}
+.nav__container img {
+  height: 50px;
+}
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -270,7 +277,7 @@ img {
   display: inline-flex;
   align-items: center;
   -moz-column-gap: 0.25rem;
-       column-gap: 0.25rem;
+  column-gap: 0.25rem;
   padding: 0.75rem 1rem;
 }
 .button__icon {
@@ -325,7 +332,7 @@ img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .gallery__container img:nth-child(2) {
   grid-column: auto/span 2;
@@ -348,7 +355,7 @@ img {
   display: flex;
   width: calc(250px * 14);
   -webkit-animation: scroll 40s infinite linear;
-          animation: scroll 40s infinite linear;
+  animation: scroll 40s infinite linear;
 }
 .slider__track .slide {
   margin-right: 2rem;
@@ -379,16 +386,23 @@ img {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 10));
+    -webkit-transform: translateX(calc(-250px * 10));
+    -moz-transform: translateX(calc(-250px * 10));
+    -ms-transform: translateX(calc(-250px * 10));
+    -o-transform: translateX(calc(-250px * 10));
   }
 }
-
 @keyframes scroll {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 10));
+    -webkit-transform: translateX(calc(-250px * 10));
+    -moz-transform: translateX(calc(-250px * 10));
+    -ms-transform: translateX(calc(-250px * 10));
+    -o-transform: translateX(calc(-250px * 10));
   }
 }
 .brand {
@@ -623,7 +637,7 @@ body.dark-theme {
     display: flex;
     flex-direction: row;
     -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
+    column-gap: 2.5rem;
   }
   .nav__toggle {
     display: none;
@@ -650,7 +664,7 @@ body.dark-theme {
   .about__container,
 .contact__container {
     -moz-column-gap: 6rem;
-         column-gap: 6rem;
+    column-gap: 6rem;
   }
 
   .services__container,
@@ -670,7 +684,7 @@ body.dark-theme {
     grid-template-columns: 30% 25% -webkit-max-content;
     grid-template-columns: 30% 25% max-content;
     -moz-column-gap: 4rem;
-         column-gap: 4rem;
+    column-gap: 4rem;
   }
   .footer__social {
     align-items: flex-start;

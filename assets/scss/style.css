@@ -53,6 +53,7 @@
 *,
 ::before,
 ::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -68,6 +69,8 @@ body {
   font-family: var(--body-font);
   background-color: var(--body-color);
   color: var(--text-color);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -90,4 +93,4 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}/*# sourceMappingURL=style.css.map */
+}
